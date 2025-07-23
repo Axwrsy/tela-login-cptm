@@ -23,9 +23,11 @@ src/
    cd tela-login-cptm
    
 2. Instale as dependências:
+   ```bash
    npm install
    
-3. execute o projeto
+4. execute o projeto:
+   ```bash
    npm run dev
 
 
