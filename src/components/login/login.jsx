@@ -2,6 +2,10 @@
 import {FaUser, FaLock} from 'react-icons/fa'
 //state é como se fosse as variaveis 
 import {useState} from 'react';
+
+//hook pode navegar entre as rotas
+import { useNavigate } from 'react-router-dom';
+
 //para inserir img é necessario importar
 import logo from '../../assets/logo.png';
 
@@ -11,15 +15,20 @@ const Login = () => {
   //é necessario criar a var p armazenar os states
   const [userName, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); //hook pra iniciar 
 
   //função p envio do formulario
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    alert('login bem sucedido, ' + userName)
-    //console.log('envio'); 
-  }
-
+     // aqui é a validação do login
+     if (userName === 'ANACAROLIN' && password === 'ana#$#') {
+      navigate('/home'); // redireciona para /home
+      alert('login bem sucedido, ' + userName)
+    } else {
+      alert('usuário ou senha incorretos!');
+    }
+  };
 
   return (
     <div className='container'>
