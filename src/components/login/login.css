@@ -47,6 +47,7 @@
     font-size: 16px;
     color: #2e2a2a;
     padding: 20px 40px;
+    font-family: Helvetica;
 }
 
 .input-field input::placeholder{

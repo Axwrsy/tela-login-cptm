@@ -1,34 +1,12 @@
-# tela de Login em React
+# React + Vite
 
-este projeto é uma simples tela de login criada com **React** utilizando **Vite** como bundler. O formulário inclui campos de usuário e senha, ícones de login e senha com `react-icons`.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## estrutura do Projeto
-src/
-├── assets/
-│ └── logo.png
-├── components/
-│ └── login/
-│ ├── login.jsx
-│ └── login.css
-├── App.css
-├── App.jsx
-└── main.jsx
+## Expanding the ESLint configuration
 
-## como executar o projeto
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/axwrsy/tela-login-cptm.git
-   cd tela-login-cptm
-   
-2. Instale as dependências:
-   ```bash
-   npm install
-   
-4. execute o projeto:
-   ```bash
-   npm run dev
-
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
